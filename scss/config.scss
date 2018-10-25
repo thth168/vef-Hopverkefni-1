@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 $Max_Width: 1200px;
 $Gutter: 20px;
 
-$Black: #000000;
-$White: #ffffff;
+$Black: #000;
+$White: #fff;
 $Tan: #afb281;
 $Light_Blue: #cee8ff;
 $Light_Yellow: #fcffd2;
 $Pink: #cc9694;
 
-$Font_Main: 'Open Sans', helvetica, arial, sans-serif;
-$Font_Headings: 'Oswald', verdana, serif;
+$Font_Main: "Open Sans", helvetica, arial, sans-serif;
+$Font_Headings: "Oswald", verdana, serif;
 
+$Animation_Speed: 300ms;
+$Animation_Style: ease-in-out;
