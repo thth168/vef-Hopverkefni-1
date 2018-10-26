@@ -31,12 +31,12 @@ html {
     justify-content: space-around;
     text-align: center;
     margin-bottom: 20px; }
-    #staff_body header div {
+    #staff_body header .top__links {
       display: flex;
       justify-content: center; }
-      #staff_body header div p {
+      #staff_body header .top__links p {
         min-width: 25%; }
-        #staff_body header div p img {
+        #staff_body header .top__links p img {
           width: 2ch;
           margin-right: 1ch; }
   #staff_body .staff__body {
