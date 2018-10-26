@@ -4,7 +4,7 @@ Til þess að keyra verkefnið þarf maður að opna node.js command prompt, fara í mö
 geymdar. Í annarri möppunni, "pages" eru öll html skjölin geymd og í þriðju möppunni "scss" eru scss skjölin fyrir allar síðurnar
 geymd. Og svo er restin af skránum geymdar í aðal möppunni.
 
-CSS-ið er skipulagt á þann hátt að það er flutt scss úr öllum skránum í scss möppunni í styles.scss í aðal möppunni sem er svo þýdd
+CSS-ið er skipulagt á þann hátt að það er flutt scss úr öllum skránum í scss möppunni í styles.scss í aðal möppuna sem er svo þýdd
 yfir í css í styles.css möppuna.
 
 Upplýsingar þeirra sem unnu verkefnið:
