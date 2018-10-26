@@ -67,18 +67,45 @@ header {
               width: 100%;
               display: flex;
               flex-wrap: wrap;
+              %shared_settings  {
+                border-radius: 2px;
+                border: solid 1px;
+                background-color: $White;
+                margin-right: 2ch;
+                padding: 4px;
+              }
+
+              p {
+                width: 100%;
+              }
 
               input {
-                border-radius: 2px;
+                @extend %shared_settings;
+                width: 8ch;
               }
 
               .uppfaera {
-                border-radius: 2px;
-                background-color: $White;
+                @extend %shared_settings;
+                padding-left: 1ch;
+                display: flex;
+
+                img {
+                    width: 2ch;
+                    height: auto;
+                    margin-right: 1ch;
+                }
               }
 
               .eyda-ur-korfu {
+                @extend %shared_settings;
+                padding-left: 1ch;
+                display: flex;
 
+                img {
+                    width: 2ch;
+                    height: auto;
+                    margin-right: 1ch;
+                }
               }
             }
         }

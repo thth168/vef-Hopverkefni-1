@@ -63,11 +63,30 @@ html {
           width: 100%;
           display: flex;
           flex-wrap: wrap; }
-          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons input {
-            border-radius: 2px; }
-          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .uppfaera {
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons input, #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .uppfaera, #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .eyda-ur-korfu {
             border-radius: 2px;
-            background-color: #fff; }
+            border: solid 1px;
+            background-color: #fff;
+            margin-right: 2ch;
+            padding: 4px; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons p {
+            width: 100%; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons input {
+            width: 8ch; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .uppfaera {
+            padding-left: 1ch;
+            display: flex; }
+            #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .uppfaera img {
+              width: 2ch;
+              height: auto;
+              margin-right: 1ch; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .eyda-ur-korfu {
+            padding-left: 1ch;
+            display: flex; }
+            #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .eyda-ur-korfu img {
+              width: 2ch;
+              height: auto;
+              margin-right: 1ch; }
   #cart_body footer {
     background-color: #cc9694;
     margin-top: 20px; }
