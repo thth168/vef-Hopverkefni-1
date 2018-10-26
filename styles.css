@@ -40,6 +40,8 @@ html {
           width: 2ch;
           margin-right: 1ch; }
   #staff_body main {
+    max-width: 1200px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     width: 100%; }
@@ -65,7 +67,8 @@ html {
           height: 100%;
           backface-visibility: hidden;
           text-align: center;
-          top: 0; }
+          top: 35%;
+          padding: 20px; }
   #staff_body footer {
     background-color: #cc9694;
     margin-top: 20px; }
