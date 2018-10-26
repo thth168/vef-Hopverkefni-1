@@ -18,12 +18,7 @@ html {
 
 #staff_body {
   /* stylelint-disable-line */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  align-items: stretch; }
+  width: 100%; }
   #staff_body header, #staff_body footer {
     padding-right: 20px;
     padding-left: 20px; }
@@ -45,39 +40,32 @@ html {
           width: 2ch;
           margin-right: 1ch; }
   #staff_body main {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 100%; }
+    width: 100%; }
     #staff_body main .cards {
-      width: 50%;
-      height: 100%;
-      padding: 20px; }
+      width: 50%; }
       #staff_body main .cards:hover .cards_inner {
         transform: rotateY(180deg); }
       #staff_body main .cards .cards_inner {
-        transition: transform 300ms;
-        transition-timing-function: ease-in-out;
-        transform-style: preserve-3d;
         position: relative;
-        text-align: center;
         width: 100%;
-        height: 100%;
-        background-size: contain; }
+        transition: transform 300ms;
+        transform-style: preserve-3d;
+        backface-visibility: hidden; }
         #staff_body main .cards .cards_inner .card_front {
-          position: absolute;
-          width: 100%;
-          height: auto;
-          backface-visibility: hidden; }
-          #staff_body main .cards .cards_inner .card_front * {
-            height: 100%;
-            width: 100%; }
+          width: 100%; }
+          #staff_body main .cards .cards_inner .card_front img {
+            width: 100%;
+            backface-visibility: hidden; }
         #staff_body main .cards .cards_inner .card_back {
           position: absolute;
+          transform: rotateY(180deg);
           width: 100%;
           height: 100%;
-          transform: rotateY(180deg);
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+          text-align: center;
+          top: 0; }
   #staff_body footer {
     background-color: #cc9694;
     margin-top: 20px; }
