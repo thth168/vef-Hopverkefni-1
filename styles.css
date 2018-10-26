@@ -9,6 +9,33 @@
 *::after {
   box-sizing: inherit; }
 
+footer {
+  background-color: #cc9694;
+  margin-top: 20px;
+  font-family: "Open Sans", helvetica, arial, sans-serif; }
+  footer .link__cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 2 * 20px);
+    max-width: var(--max_width);
+    display: flex;
+    flex-wrap: wrap; }
+    footer .link__cards .link__list {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      footer .link__cards .link__list p {
+        color: #fcffd2;
+        padding-bottom: 10px; }
+      footer .link__cards .link__list h1 {
+        padding: 20px 0px;
+        font-weight: bold; }
+  footer .bottom__copyright {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold; }
+
 html {
   /* stylelint-disable-line */
   box-sizing: border-box;

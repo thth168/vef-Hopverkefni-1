@@ -11,6 +11,39 @@
   box-sizing: inherit;
 }
 
+footer {
+  background-color: $Pink;
+  margin-top: 20px;
+  font-family: $Font-Main;
+  .link__cards {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 2 * 20px);
+    max-width: var(--max_width);
+    display: flex;
+    flex-wrap: wrap;
+    .link__list {    
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      flex-wrap: wrap;
+      p {
+        color: #fcffd2;
+        padding-bottom: 10px;
+      }
+      h1 {
+        padding: 20px 0px;
+        font-weight: bold;
+      }
+    }
+  }
+  .bottom__copyright{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+}
+
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
