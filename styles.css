@@ -39,26 +39,26 @@ html {
         #staff_body header div p img {
           width: 2ch;
           margin-right: 1ch; }
-  #staff_body main {
+  #staff_body .staff__body {
     display: flex;
     flex-wrap: wrap;
     width: 100%; }
-    #staff_body main .cards {
+    #staff_body .staff__body .cards {
       width: 50%; }
-      #staff_body main .cards:hover .cards_inner {
+      #staff_body .staff__body .cards:hover .cards_inner {
         transform: rotateY(180deg); }
-      #staff_body main .cards .cards_inner {
+      #staff_body .staff__body .cards .cards_inner {
         position: relative;
         width: 100%;
         transition: transform 300ms;
         transform-style: preserve-3d;
         backface-visibility: hidden; }
-        #staff_body main .cards .cards_inner .card_front {
+        #staff_body .staff__body .cards .cards_inner .card_front {
           width: 100%; }
-          #staff_body main .cards .cards_inner .card_front img {
+          #staff_body .staff__body .cards .cards_inner .card_front img {
             width: 100%;
             backface-visibility: hidden; }
-        #staff_body main .cards .cards_inner .card_back {
+        #staff_body .staff__body .cards .cards_inner .card_back {
           position: absolute;
           transform: rotateY(180deg);
           width: 100%;
