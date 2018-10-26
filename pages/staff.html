@@ -1,70 +1,99 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Starfsfólk</title>
-
-    <link rel="stylesheet" href="/grid.css">
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body id="staff_body">
-    <header>
-        <h1>Starfsfólk</h1>
-        <div>
-            <p></p>
-            <div>
-                <p>FORSÍÐA</p>
-                <p>VÖRUR</p>
-                <p>STARFSFÓLK</p>
-            </div>
-            <p><img src="/img/karfa.svg" alt="Karfa">Karfa (3)</p>
-        </div>
-    </header>
-    <main>
-        <div class="cards">
-            <div class="cards_inner">
-                <div class="card_front">
-                    <img src="/img/karolina.jpg" alt="Karólína">
-                </div>
-                <div class="card_back">
-                    <p>Karólína er forstjóri Vöruhússins.</p>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Starfsfólk</title>
+        <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="styles.scss">
+    </head>
+    <body>
+        <header>
+            <h1>Vöruhúsið</h1>
+            <div class="top__links">
+                <h2>Forsíða</h2>
+                <h2>Vörur</h2>
+                <h2>Starfsfólk</h2>
+                <div class="top__karfa">
+                    <img src="img/karfa.svg">
+                    <h3>Karfa</h3>
                 </div>
             </div>
-        </div>
-        <div class="cards">
-            <div class="cards_inner">
-                <div class="card_front">
-                    <img src="/img/tomas.jpg" alt="Tómas">
+        </header>
+        <div class="staff__body">
+            <div class="cards">
+                <div class="cards_inner">
+                    <div class="card_front">
+                        <img src="/img/karolina.jpg" alt="Karólína">
+                    </div>
+                    <div class="card_back">
+                        <p>Karólína er forstjóri Vöruhússins.</p>
+                    </div>
                 </div>
-                <div class="card_back">
-                    <p>Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
+            </div>
+            <div class="cards">
+                <div class="cards_inner">
+                    <div class="card_front">
+                        <img src="/img/tomas.jpg" alt="Tómas">
+                    </div>
+                    <div class="card_back">
+                        <p>Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards_inner">
+                    <div class="card_front">
+                        <img src="/img/anna.jpg" alt="Anna">
+                    </div>
+                    <div class="card_back">
+                        <p>Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards_inner">
+                    <div class="card_front">
+                        <img src="/img/jon.jpg" alt="Jón">
+                    </div>  
+                    <div class="card_back">
+                        <p>Jón sér um peningana. Gefðu Jóni peninga með því að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="cards">
-            <div class="cards_inner">
-                <div class="card_front">
-                    <img src="/img/anna.jpg" alt="Anna">
-                </div>
-                <div class="card_back">
-                    <p>Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
-                </div>
+        <footer>
+            <div class="link__list">
+                <h1>Vöruflokkar</h1>
+                <p>Nauðsynjavörur</p>
+                <p>Frábærar vörur</p>
+                <p>Ómissandi vörur</p>
+                <p>Ótrúlegar vörur</p>
+                <p>Magnaðar vörur</p>
             </div>
-        </div>
-        <div class="cards">
-            <div class="cards_inner">
-                <div class="card_front">
-                    <img src="/img/jon.jpg" alt="Jón">
-                </div>  
-                <div class="card_back">
-                    <p>Jón sér um peningana. Gefðu Jóni peninga með því að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>
-                </div>
+            <div class="link__list">
+                <h1>Vöruflokkar</h1>
+                <p>Trylltar vörur</p>
+                <p>Geggjaðar vörur</p>
+                <p>Svakalegar vörur</p>
+                <p>Fáránlegar vörur</p>
+                <p>Klikkaðar vörur</p>
             </div>
-        </div>
-    </main>
-    <footer>
-        <p>2018 Vöruhúsið</p>
-    </footer>
-</body>
+            <div class="link__list">
+                <h1>Vöruflokkar</h1>
+                <p>Nýjar vörur</p>
+                <p>Gamlar vörur</p>
+                <p>Skrítnar vörur</p>
+            </div>
+            <div class="link__list">
+                <h1>Síður</h1>
+                <p><a href="pages/products.html">Allar vörur</a></p>
+                <p><a href="pages/staff.html">Starfsfólk</a></p>
+                <p><a href="pages/cart.html">Karfa</a></p>
+            </div>
+            <div class="bottom__copyright">
+                <p>© 2018 Vöruhúsið</p>
+            </div>
+        </footer>
+    </body>
 </html>
