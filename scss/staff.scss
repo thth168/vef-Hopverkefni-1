@@ -1,19 +1,21 @@
 #staff_body {/* stylelint-disable-line */
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 
   %shared_size {
-    padding-right: $Gutter;
-    padding-left: $Gutter;
+    padding-right: $Gutter - 10px;
+    padding-left: $Gutter - 10px;
   }
 
   header {
-    @extend %shared_size;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: $Tan;
-    justify-content: space-around;
     text-align: center;
     margin-bottom: 20px;
     .top__links{
@@ -27,11 +29,14 @@
     }
 
   .staff__body {
+    @extend %shared_size;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1240px;
     width: 100%;
       .cards {
         width: 50%;
+        padding: 10px;
 
         &:hover .cards_inner {
           transform: rotateY(180deg);
@@ -60,7 +65,8 @@
             height: 100%;
             backface-visibility: hidden;
             text-align: center;
-            top: 0;
+            top: 30%;
+            padding: 20px;
           }
         }
       }

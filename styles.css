@@ -18,17 +18,20 @@ html {
 
 #staff_body {
   /* stylelint-disable-line */
-  width: 100%; }
-  #staff_body header, #staff_body footer {
-    padding-right: 20px;
-    padding-left: 20px; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  #staff_body .staff__body, #staff_body footer {
+    padding-right: 10px;
+    padding-left: 10px; }
   #staff_body header {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #afb281;
-    justify-content: space-around;
     text-align: center;
     margin-bottom: 20px; }
     #staff_body header .top__links .top__karfa img {
@@ -37,9 +40,11 @@ html {
   #staff_body .staff__body {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1240px;
     width: 100%; }
     #staff_body .staff__body .cards {
-      width: 50%; }
+      width: 50%;
+      padding: 10px; }
       #staff_body .staff__body .cards:hover .cards_inner {
         transform: rotateY(180deg); }
       #staff_body .staff__body .cards .cards_inner {
@@ -60,7 +65,8 @@ html {
           height: 100%;
           backface-visibility: hidden;
           text-align: center;
-          top: 0; }
+          top: 30%;
+          padding: 20px; }
   #staff_body footer {
     background-color: #cc9694;
     margin-top: 20px; }
