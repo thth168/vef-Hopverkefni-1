@@ -1,10 +1,5 @@
 #staff_body {/* stylelint-disable-line */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  align-items: stretch;
 
   %shared_size {
     padding-right: $Gutter;
@@ -38,50 +33,43 @@
   }
 
   main {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    width: 100%;
+      .cards {
+        width: 50%;
 
-    .cards {
-      width: 50%;
-      height: 100%;
-      padding: 20px;
-
-      &:hover .cards_inner{
-        transform: rotateY(180deg);
-      }
-
-      .cards_inner {
-        transition: transform $Animation_Speed;
-        transition-timing-function: $Animation_Style;
-        transform-style: preserve-3d;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-        .card_front {
-          position: absolute;
-          width: 100%;
-          height: auto;
-          backface-visibility: hidden;
-
-            * {
-              height: 100%;
-              width: 100%;
-            }
-        }
-
-        .card_back {
-          position: absolute;
-          width: 100%;
-          height: 100%;
+        &:hover .cards_inner {
           transform: rotateY(180deg);
+        }
+
+        .cards_inner {
+          position: relative;
+          width: 100%;
+          transition: transform 300ms;
+          transform-style: preserve-3d;
           backface-visibility: hidden;
+
+          .card_front {
+            width: 100%;
+
+            img {
+              width: 100%;
+              backface-visibility: hidden;
+            }
+          }
+
+          .card_back {
+            position: absolute;
+            transform: rotateY(180deg);
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            text-align: center;
+            top: 0;
+          }
         }
       }
-    }
   }
 
   footer{
