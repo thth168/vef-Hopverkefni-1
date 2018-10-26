@@ -1,0 +1,92 @@
+#staff_body {/* stylelint-disable-line */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: stretch;
+
+  %shared_size {
+    padding-right: $Gutter;
+    padding-left: $Gutter;
+  }
+
+  header {
+    @extend %shared_size;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: $Tan;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+
+    div{
+      display: flex;
+      justify-content: center;
+
+      p {
+        min-width: 25%;
+
+        img {
+          width: 2ch;
+          margin-right: 1ch;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .cards {
+      width: 50%;
+      height: 100%;
+      padding: 20px;
+
+      &:hover .cards_inner{
+        transform: rotateY(180deg);
+      }
+
+      .cards_inner {
+        transition: transform $Animation_Speed;
+        transition-timing-function: $Animation_Style;
+        transform-style: preserve-3d;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        .card_front {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          backface-visibility: hidden;
+
+            * {
+              height: 100%;
+              width: 100%;
+            }
+        }
+
+        .card_back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+        }
+      }
+    }
+  }
+
+  footer{
+    @extend %shared_size;
+    background-color: $Pink;
+    margin-top: 20px;
+  }
+}
