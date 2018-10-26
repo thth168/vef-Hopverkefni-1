@@ -51,14 +51,22 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 20px; }
+  padding: 20px; }
+  @media only screen and (min-width: 1200px) {
+    .cart__body {
+      padding: 0;
+      margin: auto; } }
+  .cart__body .cart__body-title {
+    margin-bottom: 20px; }
   .cart__body .cart__body-items {
     width: 100%;
-    display: flex; }
+    display: flex;
+    margin-bottom: 20px; }
     .cart__body .cart__body-items .cart__body-items-image {
-      width: calc(100%/3 - 15px);
+      width: calc(100%/2 - 45px);
       margin-right: 20px; }
       .cart__body .cart__body-items .cart__body-items-image img {
         width: 100%;
