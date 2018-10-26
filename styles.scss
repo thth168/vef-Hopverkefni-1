@@ -11,6 +11,47 @@
   box-sizing: inherit;
 }
 
+
+header {
+  width: 100%;
+  background-color: $Tan;
+  font-family: $Font-Headings;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 20px;
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+  }
+  .top__links{
+    max-width: var(--max_width);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    h2 {
+      padding: 0px 10px;
+    }
+    .top__valmynd {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .top__karfa {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 36px;
+      img{
+        width: 2ch;
+        margin-right: 1ch;
+      }
+    }
+  }
+}
+
+
 footer {
   background-color: $Pink;
   margin-top: 20px;

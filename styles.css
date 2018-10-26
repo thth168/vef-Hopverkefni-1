@@ -9,6 +9,38 @@
 *::after {
   box-sizing: inherit; }
 
+header {
+  width: 100%;
+  background-color: #afb281;
+  font-family: "Oswald", verdana, serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 20px; }
+  header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px; }
+  header .top__links {
+    max-width: var(--max_width);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; }
+    header .top__links h2 {
+      padding: 0px 10px; }
+    header .top__links .top__valmynd {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto; }
+    header .top__links .top__karfa {
+      display: flex;
+      flex-wrap: wrap;
+      max-height: 36px; }
+      header .top__links .top__karfa img {
+        width: 2ch;
+        margin-right: 1ch; }
+
 footer {
   background-color: #cc9694;
   margin-top: 20px;
@@ -110,17 +142,6 @@ html {
   #staff_body .staff__body {
     padding-right: 10px;
     padding-left: 10px; }
-  #staff_body header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #afb281;
-    text-align: center;
-    margin-bottom: 20px; }
-    #staff_body header .top__links .top__karfa img {
-      width: 2ch;
-      margin-right: 1ch; }
   #staff_body .staff__body {
     display: flex;
     flex-wrap: wrap;
