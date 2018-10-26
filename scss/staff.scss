@@ -32,15 +32,19 @@
     }
   }
 
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+
+
+
+  .staff_body {
+    .staff__body {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       .cards {
         width: 50%;
 
         &:hover .cards_inner {
-          transform: rotateY(180deg);
+        transform: rotateY(180deg);
         }
 
         .cards_inner {
@@ -70,6 +74,7 @@
           }
         }
       }
+    }
   }
 
   footer{
