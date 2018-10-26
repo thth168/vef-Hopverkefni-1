@@ -76,10 +76,4 @@
         }
       }
   }
-
-  footer{
-    @extend %shared_size;
-    background-color: $Pink;
-    margin-top: 20px;
-  }
 }

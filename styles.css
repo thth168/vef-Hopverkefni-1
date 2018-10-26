@@ -125,7 +125,7 @@ html {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center; }
-  #staff_body .staff__body, #staff_body footer {
+  #staff_body #cart_body footer, #cart_body #staff_body footer, #staff_body .staff__body {
     padding-right: 10px;
     padding-left: 10px; }
   #staff_body header {
@@ -174,6 +174,3 @@ html {
           text-align: center;
           top: 30%;
           padding: 20px; }
-  #staff_body footer {
-    background-color: #cc9694;
-    margin-top: 20px; }
