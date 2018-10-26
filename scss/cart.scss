@@ -1,0 +1,97 @@
+#cart_body{
+width: 100%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+
+%shared_size {
+  padding-right: $Gutter - 10px;
+  padding-left: $Gutter - 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $Tan;
+  text-align: center;
+  margin-bottom: 20px;
+  .top__links{
+    .top__karfa {
+     img{
+        width: 2ch;
+        margin-right: 1ch;
+       }
+      }
+    }
+  }
+  .cart__body {
+    max-width: 1200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .cart__body-title {
+
+    }
+
+    .cart__body-items {
+      width: 100%;
+      display: flex;
+        .cart__body-items-image {
+            width: calc(100%/3 - 15px);
+            margin-right: 20px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .cart__body-items-info {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: stretch;
+
+            .cart__body-items-info-text {
+              margin-bottom: auto;
+            }
+            .cart__body-items-info-price {
+
+            }
+
+            .cart__body-items-info-buttons {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+
+              input {
+                border-radius: 2px;
+              }
+
+              .uppfaera {
+                border-radius: 2px;
+                background-color: $White;
+              }
+
+              .eyda-ur-korfu {
+
+              }
+            }
+        }
+    }
+
+    .cart__body-payment {
+
+    }
+  }
+
+  footer{
+    @extend %shared_size;
+    background-color: $Pink;
+    margin-top: 20px;
+  }
+}
