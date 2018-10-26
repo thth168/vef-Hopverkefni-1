@@ -16,6 +16,62 @@ html {
   width: 100%;
   font-size: 16px; }
 
+#cart_body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  #cart_body footer, #cart_body #staff_body .staff__body, #staff_body #cart_body .staff__body {
+    padding-right: 10px;
+    padding-left: 10px; }
+  #cart_body header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #afb281;
+    text-align: center;
+    margin-bottom: 20px; }
+    #cart_body header .top__links .top__karfa img {
+      width: 2ch;
+      margin-right: 1ch; }
+  #cart_body .cart__body {
+    max-width: 1200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    #cart_body .cart__body .cart__body-items {
+      width: 100%;
+      display: flex; }
+      #cart_body .cart__body .cart__body-items .cart__body-items-image {
+        width: calc(100%/3 - 15px);
+        margin-right: 20px; }
+        #cart_body .cart__body .cart__body-items .cart__body-items-image img {
+          width: 100%;
+          height: auto; }
+      #cart_body .cart__body .cart__body-items .cart__body-items-info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch; }
+        #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-text {
+          margin-bottom: auto; }
+        #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons input {
+            border-radius: 2px; }
+          #cart_body .cart__body .cart__body-items .cart__body-items-info .cart__body-items-info-buttons .uppfaera {
+            border-radius: 2px;
+            background-color: #fff; }
+  #cart_body footer {
+    background-color: #cc9694;
+    margin-top: 20px; }
+
 #staff_body {
   /* stylelint-disable-line */
   width: 100%;
