@@ -95,6 +95,26 @@
     }
 
     .cart__body-payment {
+        display: flex;
+        justify-content: center;
 
+        .cart__body-payment-form{
+            display: flex;
+
+            .payment-sending {
+              width: 50%;
+            }
+
+            .payment-greid {
+              width: 50%;
+
+              #Ár {
+                width: 20%;
+              }
+              #Mán {
+                width: 20%;
+              }
+            }
+        }
     }
   }
