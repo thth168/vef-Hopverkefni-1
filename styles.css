@@ -43,8 +43,13 @@ html {
     max-width: 1240px;
     width: 100%; }
     #staff_body .staff__body .cards {
-      width: 50%;
       padding: 10px; }
+      @media screen and (max-width: 600px) {
+        #staff_body .staff__body .cards {
+          width: 100%; } }
+      @media screen and (min-width: 600px) {
+        #staff_body .staff__body .cards {
+          width: 50%; } }
       #staff_body .staff__body .cards:hover .cards_inner {
         transform: rotateY(180deg); }
       #staff_body .staff__body .cards .cards_inner {
